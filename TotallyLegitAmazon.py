@@ -90,6 +90,30 @@ def main():
                 
                 print("Your total is: "+str(sum(ItemPrices))+"$")
                 print()
+                print("Connecting to ScamAzon API....")
+                time.sleep(1)
+                clear_console()
+                ItemAmount=len(Items)
+                CurrentItem=0
+                print("Your Cart:")
+                while ItemAmount!=CurrentItem:
+                    print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
+                    CurrentItem+=1
+                
+                print("Your total is: "+str(sum(ItemPrices))+"$")
+                print()
+                print("Connecting to ScamAzon API....Done!")
+                time.sleep(1)
+                clear_console()
+                ItemAmount=len(Items)
+                CurrentItem=0
+                print("Your Cart:")
+                while ItemAmount!=CurrentItem:
+                    print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
+                    CurrentItem+=1
+                
+                print("Your total is: "+str(sum(ItemPrices))+"$")
+                print()
                 print("Processing your order")
                 time.sleep(1)
                 clear_console()
@@ -155,7 +179,7 @@ def main():
                 
                 print("Your total is: "+str(sum(ItemPrices))+"$")
                 print()
-                print("Done!")
+                print("Processing your order....Done!")
                 time.sleep(1)
 
                 clear_console()
