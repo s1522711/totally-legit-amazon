@@ -11,6 +11,21 @@ def intro():
         print("This program was made by idiot .inc and drunkcord .inc")
         time.sleep(0.1)
         ZeLoopVar+=1
+
+def print_cart_fast():
+    clear_console()
+    ItemAmount=len(Items)
+    CurrentItem=0
+    ConfirmOrderDone=1
+                
+    print("Your Cart:")
+    while ItemAmount!=CurrentItem:
+        print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
+        CurrentItem+=1
+                
+    print("Your total is: "+str(sum(ItemPrices))+"$")
+    print()
+
     
 
 
@@ -78,121 +93,32 @@ def main():
 
 
             if ConfirmOrder=="y" or ConfirmOrder=="Y":
-                clear_console()
-                ItemAmount=len(Items)
-                CurrentItem=0
-                ConfirmOrderDone=1
-                
-                print("Your Cart:")
-                while ItemAmount!=CurrentItem:
-                    print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
-                    CurrentItem+=1
-                
-                print("Your total is: "+str(sum(ItemPrices))+"$")
-                print()
-                print("Connecting to ScamAzon API....")
+                print_cart_fast()
+                print("Connecting to the ScamAzon API....")
                 time.sleep(1)
-                clear_console()
-                ItemAmount=len(Items)
-                CurrentItem=0
-                print("Your Cart:")
-                while ItemAmount!=CurrentItem:
-                    print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
-                    CurrentItem+=1
-                
-                print("Your total is: "+str(sum(ItemPrices))+"$")
-                print()
-                print("Connecting to ScamAzon API....Done!")
+                print_cart_fast()
+                print("Connecting to the ScamAzon API....Done!")
                 time.sleep(1)
-                clear_console()
-                ItemAmount=len(Items)
-                CurrentItem=0
-                print("Your Cart:")
-                while ItemAmount!=CurrentItem:
-                    print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
-                    CurrentItem+=1
-                
-                print("Your total is: "+str(sum(ItemPrices))+"$")
-                print()
-                print("Processing your order")
+                print_cart_fast()
+                print("Processing Your Order")
                 time.sleep(1)
-                clear_console()
-                ItemAmount=len(Items)
-                CurrentItem=0
-                
-                print("Your Cart:")
-                while ItemAmount!=CurrentItem:
-                    print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
-                    CurrentItem+=1
-                
-                print("Your total is: "+str(sum(ItemPrices))+"$")
-                print()
-                print("Processing your order.")
+                print_cart_fast()
+                print("Processing Your Order.")
                 time.sleep(1)
-                clear_console()
-                ItemAmount=len(Items)
-                CurrentItem=0
-                
-                print("Your Cart:")
-                while ItemAmount!=CurrentItem:
-                    print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
-                    CurrentItem+=1
-                
-                print("Your total is: "+str(sum(ItemPrices))+"$")
-                print()
-                print("Processing your order..")
+                print_cart_fast()
+                print("Processing Your Order..")
                 time.sleep(1)
-                clear_console()
-                ItemAmount=len(Items)
-                CurrentItem=0
-                
-                print("Your Cart:")
-                while ItemAmount!=CurrentItem:
-                    print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
-                    CurrentItem+=1
-                
-                print("Your total is: "+str(sum(ItemPrices))+"$")
-                print()
-                print("Processing your order...")
+                print_cart_fast()
+                print("Processing Your Order...")
                 time.sleep(1)
-                clear_console()
-                ItemAmount=len(Items)
-                CurrentItem=0
-                
-                print("Your Cart:")
-                while ItemAmount!=CurrentItem:
-                    print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
-                    CurrentItem+=1
-                
-                print("Your total is: "+str(sum(ItemPrices))+"$")
-                print()
-                print("Processing your order....")
+                print_cart_fast()
+                print("Processing Your Order....")
                 time.sleep(1)
-                clear_console()
-                ItemAmount=len(Items)
-                CurrentItem=0
-                
-                print("Your Cart:")
-                while ItemAmount!=CurrentItem:
-                    print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
-                    CurrentItem+=1
-                
-                print("Your total is: "+str(sum(ItemPrices))+"$")
-                print()
-                print("Processing your order....Done!")
+                print_cart_fast()
+                print("Processing Your Order....Done!")
                 time.sleep(1)
-
-                clear_console()
-                ItemAmount=len(Items)
-                CurrentItem=0
-                
-                print("Your Cart:")
-                while ItemAmount!=CurrentItem:
-                    print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
-                    CurrentItem+=1
-                
-                print("Your total is: "+str(sum(ItemPrices))+"$")
-                print()
+                print_cart_fast()
+                print("Processing Your Order.")
                 print()
                 print("Your Item will be delivered by 100% not spy drones and will arrive tomorrow!")
                 exit(0)
