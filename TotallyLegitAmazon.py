@@ -7,12 +7,10 @@ def clear_console():
 def intro():
     clear_console()
     ZeLoopVar=0
-    while ZeLoopVar!=29:
+    while ZeLoopVar!=30:
         print("This program was made by idiot .inc and drunkcord .inc")
         time.sleep(0.1)
         ZeLoopVar+=1
-    print("This program was made by idiot .inc and drunkcord .inc")
-    time.sleep(2)
     
 
 
@@ -33,7 +31,7 @@ def main():
             
             if ItemName=="done" or ItemName=="Done":
                 GoToCart=1
-                #print("GoToCart is:",GoToCart)
+                print("GoToCart is:",GoToCart)
             
             if GoToCart!=1:
                 Items.append(ItemName)
@@ -73,103 +71,112 @@ def main():
         print("Your total is: "+str(sum(ItemPrices))+"$")
         
         ConfirmOrder=""
-        print()
-        ConfirmOrder=input("If you want to confirm the order type Y, If you want to add another product to your cart type N: ")
-        
-        if ConfirmOrder=="y" or ConfirmOrder=="Y":
-            clear_console()
-            ItemAmount=len(Items)
-            CurrentItem=0
-            
-            print("Your Cart:")
-            while ItemAmount!=CurrentItem:
-                print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
-                CurrentItem+=1
-            
-            print("Your total is: "+str(sum(ItemPrices))+"$")
+        ConfirmOrderDone=0
+        while ConfirmOrderDone!=1:
             print()
-            print("Processing your order")
-            time.sleep(1)
-            clear_console()
-            ItemAmount=len(Items)
-            CurrentItem=0
-            
-            print("Your Cart:")
-            while ItemAmount!=CurrentItem:
-                print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
-                CurrentItem+=1
-            
-            print("Your total is: "+str(sum(ItemPrices))+"$")
-            print()
-            print("Processing your order.")
-            time.sleep(1)
-            clear_console()
-            ItemAmount=len(Items)
-            CurrentItem=0
-            
-            print("Your Cart:")
-            while ItemAmount!=CurrentItem:
-                print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
-                CurrentItem+=1
-            
-            print("Your total is: "+str(sum(ItemPrices))+"$")
-            print()
-            print("Processing your order..")
-            time.sleep(1)
-            clear_console()
-            ItemAmount=len(Items)
-            CurrentItem=0
-            
-            print("Your Cart:")
-            while ItemAmount!=CurrentItem:
-                print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
-                CurrentItem+=1
-            
-            print("Your total is: "+str(sum(ItemPrices))+"$")
-            print()
-            print("Processing your order...")
-            time.sleep(1)
-            clear_console()
-            ItemAmount=len(Items)
-            CurrentItem=0
-            
-            print("Your Cart:")
-            while ItemAmount!=CurrentItem:
-                print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
-                CurrentItem+=1
-            
-            print("Your total is: "+str(sum(ItemPrices))+"$")
-            print()
-            print("Processing your order....")
-            time.sleep(1)
-            clear_console()
-            ItemAmount=len(Items)
-            CurrentItem=0
-            
-            print("Your Cart:")
-            while ItemAmount!=CurrentItem:
-                print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
-                CurrentItem+=1
-            
-            print("Your total is: "+str(sum(ItemPrices))+"$")
-            print()
-            print("Done!")
-            time.sleep(1)
+            ConfirmOrder=input("If you want to confirm the order type Y, If you want to add another product to your cart type N: ")
 
-            clear_console()
-            ItemAmount=len(Items)
-            CurrentItem=0
-            
-            print("Your Cart:")
-            while ItemAmount!=CurrentItem:
-                print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
-                CurrentItem+=1
-            
-            print("Your total is: "+str(sum(ItemPrices))+"$")
-            print()
-            print()
-            print("Your Item will be delivered by 100% not spy drones and will arrive tomorrow!")
-            exit(0)
+
+            if ConfirmOrder=="y" or ConfirmOrder=="Y":
+                clear_console()
+                ItemAmount=len(Items)
+                CurrentItem=0
+                ConfirmOrderDone=1
+                
+                print("Your Cart:")
+                while ItemAmount!=CurrentItem:
+                    print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
+                    CurrentItem+=1
+                
+                print("Your total is: "+str(sum(ItemPrices))+"$")
+                print()
+                print("Processing your order")
+                time.sleep(1)
+                clear_console()
+                ItemAmount=len(Items)
+                CurrentItem=0
+                
+                print("Your Cart:")
+                while ItemAmount!=CurrentItem:
+                    print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
+                    CurrentItem+=1
+                
+                print("Your total is: "+str(sum(ItemPrices))+"$")
+                print()
+                print("Processing your order.")
+                time.sleep(1)
+                clear_console()
+                ItemAmount=len(Items)
+                CurrentItem=0
+                
+                print("Your Cart:")
+                while ItemAmount!=CurrentItem:
+                    print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
+                    CurrentItem+=1
+                
+                print("Your total is: "+str(sum(ItemPrices))+"$")
+                print()
+                print("Processing your order..")
+                time.sleep(1)
+                clear_console()
+                ItemAmount=len(Items)
+                CurrentItem=0
+                
+                print("Your Cart:")
+                while ItemAmount!=CurrentItem:
+                    print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
+                    CurrentItem+=1
+                
+                print("Your total is: "+str(sum(ItemPrices))+"$")
+                print()
+                print("Processing your order...")
+                time.sleep(1)
+                clear_console()
+                ItemAmount=len(Items)
+                CurrentItem=0
+                
+                print("Your Cart:")
+                while ItemAmount!=CurrentItem:
+                    print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
+                    CurrentItem+=1
+                
+                print("Your total is: "+str(sum(ItemPrices))+"$")
+                print()
+                print("Processing your order....")
+                time.sleep(1)
+                clear_console()
+                ItemAmount=len(Items)
+                CurrentItem=0
+                
+                print("Your Cart:")
+                while ItemAmount!=CurrentItem:
+                    print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
+                    CurrentItem+=1
+                
+                print("Your total is: "+str(sum(ItemPrices))+"$")
+                print()
+                print("Done!")
+                time.sleep(1)
+
+                clear_console()
+                ItemAmount=len(Items)
+                CurrentItem=0
+                
+                print("Your Cart:")
+                while ItemAmount!=CurrentItem:
+                    print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
+                    CurrentItem+=1
+                
+                print("Your total is: "+str(sum(ItemPrices))+"$")
+                print()
+                print()
+                print("Your Item will be delivered by 100% not spy drones and will arrive tomorrow!")
+                exit(0)
+            elif ConfirmOrder=="n" or ConfirmOrder=="N":
+                ConfirmOrderDone=1
+            else:
+                print("You Didnt Enter What You Were Supposed To Enter!")
+
             
 
 intro()
