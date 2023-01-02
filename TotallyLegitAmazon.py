@@ -1,7 +1,21 @@
 import os
+import time
 
 def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
+
+def intro():
+    clear_console()
+    ZeLoopVar=0
+    while ZeLoopVar!=29:
+        print("This program was made by idiot .inc and drunkcord .inc")
+        time.sleep(0.1)
+        ZeLoopVar+=1
+    print("This program was made by idiot .inc and drunkcord .inc")
+    time.sleep(2)
+    
+
+
 
 Items=[]
 ItemPrices=[]
@@ -52,11 +66,14 @@ def main():
         CurrentItem=0
         print("Your Cart:")
         while ItemAmount!=CurrentItem:
+            time.sleep(0.5)
             print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
             CurrentItem+=1
+        time.sleep(2)
         print("Your total is: "+str(sum(ItemPrices))+"$")
         
         ConfirmOrder=""
+        print()
         ConfirmOrder=input("If you want to confirm the order type Y, If you want to add another product to your cart type N: ")
         
         if ConfirmOrder=="y" or ConfirmOrder=="Y":
@@ -70,8 +87,90 @@ def main():
                 CurrentItem+=1
             
             print("Your total is: "+str(sum(ItemPrices))+"$")
+            print()
+            print("Processing your order")
+            time.sleep(1)
+            clear_console()
+            ItemAmount=len(Items)
+            CurrentItem=0
+            
+            print("Your Cart:")
+            while ItemAmount!=CurrentItem:
+                print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
+                CurrentItem+=1
+            
+            print("Your total is: "+str(sum(ItemPrices))+"$")
+            print()
+            print("Processing your order.")
+            time.sleep(1)
+            clear_console()
+            ItemAmount=len(Items)
+            CurrentItem=0
+            
+            print("Your Cart:")
+            while ItemAmount!=CurrentItem:
+                print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
+                CurrentItem+=1
+            
+            print("Your total is: "+str(sum(ItemPrices))+"$")
+            print()
+            print("Processing your order..")
+            time.sleep(1)
+            clear_console()
+            ItemAmount=len(Items)
+            CurrentItem=0
+            
+            print("Your Cart:")
+            while ItemAmount!=CurrentItem:
+                print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
+                CurrentItem+=1
+            
+            print("Your total is: "+str(sum(ItemPrices))+"$")
+            print()
+            print("Processing your order...")
+            time.sleep(1)
+            clear_console()
+            ItemAmount=len(Items)
+            CurrentItem=0
+            
+            print("Your Cart:")
+            while ItemAmount!=CurrentItem:
+                print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
+                CurrentItem+=1
+            
+            print("Your total is: "+str(sum(ItemPrices))+"$")
+            print()
+            print("Processing your order....")
+            time.sleep(1)
+            clear_console()
+            ItemAmount=len(Items)
+            CurrentItem=0
+            
+            print("Your Cart:")
+            while ItemAmount!=CurrentItem:
+                print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
+                CurrentItem+=1
+            
+            print("Your total is: "+str(sum(ItemPrices))+"$")
+            print()
+            print("Done!")
+            time.sleep(1)
+
+            clear_console()
+            ItemAmount=len(Items)
+            CurrentItem=0
+            
+            print("Your Cart:")
+            while ItemAmount!=CurrentItem:
+                print("  "+Items[CurrentItem]+" - "+str(ItemPrices[CurrentItem])+"$")
+                CurrentItem+=1
+            
+            print("Your total is: "+str(sum(ItemPrices))+"$")
+            print()
+            print()
             print("Your Item will be delivered by 100% not spy drones and will arrive tomorrow!")
             exit(0)
             
 
+intro()
 main()
