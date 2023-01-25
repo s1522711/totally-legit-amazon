@@ -73,6 +73,7 @@ def main():
         if Items==[]:
             clear_console()
             print("You Are A Fucking Idiot!")
+            os.system('pause' if os.name == 'nt' else 'echo  ')
             exit(0)
         
         ItemAmount=len(Items)
